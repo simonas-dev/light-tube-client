@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/startButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="@+id/multiplyBar"
+        app:layout_constraintEnd_toStartOf="@+id/multiplyBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/multiplyBar" />
+
+    <Button
+        android:id="@+id/resetButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/multiplyBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multiplyBar"
+        app:layout_constraintTop_toTopOf="@+id/multiplyBar" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/fadeBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:indicator_color="@color/colorAccent"
+        app:indicator_width="10"
+        app:is_continuous="true"
+        app:label="Power"
+        app:label_color="@android:color/primary_text_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiplyBar"
+        app:layout_constraintVertical_bias="0.39"
+        app:progress_primary_color="@color/colorPrimary"
+        app:progress_secondary_color="#EEEEEE" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/noteBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:indicator_color="@color/colorAccent"
+        app:indicator_width="10"
+        app:is_continuous="true"
+        app:label="Color"
+        app:label_color="@android:color/primary_text_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiplyBar"
+        app:layout_constraintVertical_bias="0.39"
+        app:progress_primary_color="@color/colorPrimary"
+        app:progress_secondary_color="#EEEEEE" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/multiplyBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:indicator_color="@color/colorAccent"
+        app:indicator_width="10"
+        app:is_continuous="true"
+        app:label="Fade"
+        app:label_color="@android:color/primary_text_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149"
+        app:progress_primary_color="@color/colorPrimary"
+        app:progress_secondary_color="#EEEEEE" />
+
+    <xyz.simonas.rgbclientandroid.widgets.ColorBar
+        android:id="@+id/colorContainer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </xyz.simonas.rgbclientandroid.widgets.ColorBar>
+
+</android.support.constraint.ConstraintLayout>
